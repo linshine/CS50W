@@ -1,0 +1,21 @@
+//difine a variable color with value red
+
+$color: rgba(23, 43, 223, 0.76);
+
+ul {
+    font-size: 14px;
+    color: $color;
+}
+
+ol {
+    font-size: 18px;
+    color: $color;
+}
+
+
+//after install scss, on commend line, type:
+//sass variable.scss variables.css
+//this will compile .scss to .css for browser to recognize, and plus one more .map file
+//if we make any changes on the .scss file, we need to compile it again (step 2)
+//or we can type:
+//sass --watch variable.scss:variables.css

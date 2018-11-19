@@ -1,0 +1,28 @@
+// % to define a template or a variable other thins are going to iinherit from
+// here for a generic message
+
+%message {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+// take all the styling from the message before, and use it.
+// but additionally add the background color to be green.
+.success {
+    @extend %message;
+    background-color: green;
+}
+
+.warning {
+    @extend %message;
+    background-color: orange;
+}
+
+.error {
+    @extend %message;
+    background-color: red;
+}

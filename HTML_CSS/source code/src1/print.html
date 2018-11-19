@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<!-- @media: create a media query
+             I want to apply CSS but only with some specific situation, in this situation, when print.
+             . is a way of specifying select everything with a particular class name.
+             display is a property, here we set it to none, being not displayed.-->
+<html>
+    <head>
+        <title>My Web Page!</title>
+        <style>
+            @media print {
+                .screen-only {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <p class="screen-only">This paragraph won't appear when you print this page.</p>
+    </body>
+</html>
