@@ -4,6 +4,15 @@
     First Page
 {% endblock %}
 
+<!--The action attribute lists the route that should be 'notified' when the
+    form is submitted. In this case, it's the URL for a function called hello.
+    
+    The method attribute is how the HTTP request to submit the form should
+    be made. The default is get, which is what browsers make when a URL is
+    entered. When data is being submitted, however, post should be used.
+    
+    The name attribute of the input, is now relevant because it can be
+    regerenced when the form is submitted.-->
 {% block body %}
     <form action="{{ url_for('hello') }}" method="post">
         <input type="text" name="name" placeholder="Enter Your Name">
